@@ -2,16 +2,16 @@
 ### written for learning git
 import numpy as np
 
-def multiply(mat1,mat2,n):
-  for i in range(n):
-    for j in range(n)
-      for k in range(n):
-        product[i][j]=mat1[i][k]*mat2[k][j]
-  return(product)
+#def multiply(mat1,mat2,n):
+#  for i in range(n):
+#    for j in range(n)
+#      for k in range(n):
+#        product[i][j]=mat1[i][k]*mat2[k][j]
+#  return(product)
 ##############################################
 
 def largest_element(mat,n):
-  largest_element=100.0
+  largest_element=mat[0][0]
   for i in range(n):
     for j in range(n):
       if(largest_element<mat[i][j]):
@@ -32,11 +32,11 @@ for i in range(0,n):
     mat2[i][j]=i-j
 
 ## testing multiplication
-print()
-print("testing matrix multiplication")
-reference_product=np.matmul(mat1,mat2)
-test_product=multiply(mat1,mat2,n)
-print(reference_product-test_product)
+#print()
+#print("testing matrix multiplication")
+#reference_product=np.matmul(mat1,mat2)
+#test_product=multiply(mat1,mat2,n)
+#print(reference_product-test_product)
 
 ## testing largest_element
 print()

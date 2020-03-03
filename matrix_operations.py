@@ -14,9 +14,9 @@ def largest_element(mat,n):
   largest_element=100.0
   for i in range(n):
     for j in range(n):
-      if(largest_element>mat[i][j]):
-        largest_elelement=mat[i][j]
-  return(largest_elelement)
+      if(largest_element<mat[i][j]):
+        largest_element=mat[i][j]
+  return(largest_element)
 
 ####################################################################
 

@@ -2,12 +2,13 @@
 ### written for learning git
 import numpy as np
 
-#def multiply(mat1,mat2,n):
-#  for i in range(n):
-#    for j in range(n)
-#      for k in range(n):
-#        product[i][j]=mat1[i][k]*mat2[k][j]
-#  return(product)
+def multiply(mat1,mat2,n):
+  product=np.zeros([n,n])
+  for i in range(n):
+    for j in range(n):
+      for k in range(n):
+        product[i][j]+=mat1[i][k]*mat2[k][j]
+  return(product)
 ##############################################
 
 def largest_element(mat,n):
